@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>VoiceCare - Senior Citizen Voice Assistant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <span class="tag">ASR • SENIOR CITIZEN ASSISTANT</span>
+    <h1> VoiceCare</h1>
+    <p>Speak naturally. VoiceCare understands simple requests and helps with daily needs.</p>
+  </div>
+  <div class="bigmic">🎙️</div>
+</header>
+
+<main>
+<section class="card">
+  <h2>🎤 Voice Command</h2>
+  <p class="hint">Example: “Remind me to take my medicine at 8 PM”</p>
+  <div class="buttons">
+    <button id="start">🎙️ Start Listening</button>
+    <button id="stop" disabled>⏹ Stop</button>
+    <button id="process">⚡ Process Command</button>
+    <button id="clear" class="gray">Clear</button>
+  </div>
+  <div id="status" class="status">Ready. Press Start Listening.</div>
+  <textarea id="text" placeholder="Recognized speech will appear here..."></textarea>
+</section>
+
+<section class="card">
+  <div class="titleline">
+    <h2>🤖 Assistant Response</h2>
+    <span id="type">Waiting</span>
+  </div>
+  <div id="response" class="response">
+    <div class="welcome">Your request result will appear here.</div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="card feature"><b>💊 Medicine</b><span>Reminders</span></div>
+  <div class="card feature"><b>📞 Family</b><span>Call request</span></div>
+  <div class="card feature"><b>🛒 Shopping</b><span>Shopping list</span></div>
+  <div class="card feature"><b>📅 Daily Task</b><span>Save tasks</span></div>
+  <div class="card feature"><b>🚕 Travel</b><span>Cab / hospital help</span></div>
+  <div class="card feature emergency"><b>🆘 Emergency</b><span>Alert request</span></div>
+</section>
+
+</main>
+<footer>VoiceCare • Voice-Based Smart Assistant for Senior Citizens Using ASR</footer>
+<script src="script.js"></script>
+</body>
+</html>
